@@ -22,7 +22,7 @@ names = ['LN']
 # 평균매수가 저장 TXT
 txt_pass = './ln.txt'
 # 이 가격이상가면 전량매도
-num = 100000.0
+num = 100000.0 
 
 def data_h(typee = '',hours=''):
     data=bithumb.get_candlestick(typee,chart_intervals=hours)['close'].to_frame()
@@ -100,7 +100,7 @@ while (True):
                 fx = f.read()
                 fx = round(float(fx),5)       
                 
-            # BIOT 현재가격
+            # 현재가격
             now_price = float(now_price1(name))
             if now_price > num:
                 # 걸어논거 전부 취소하고 시장가 매도
@@ -122,7 +122,7 @@ while (True):
             target_price_dw_1h = float(data_1h['LOW_B'][-1])
             target_price_dw_1h = round(target_price_dw_1h,5)
             
-            # BIOT 를 1000원치 매수할 시 수량 , 시장가 주문
+            # 1000원치 매수할 시 수량 , 시장가 주문
             count = round((1000/ now_price),5)
             counx = float(bithumb.get_balance(name)[0])
             #with open("./log.txt", "a") as log:
