@@ -74,8 +74,8 @@ def tele(xv=''):
     try :
         if len(xv) != 0 :
             async def main():
-                bot = telegram.Bot(token='6138858226:AAGbfkW6Xf7hitR2zqZzsNDcDDLJ8FBdoE4')
-                chat_id =  1175135554
+                bot = telegram.Bot(token='') # 자기꺼
+                chat_id =  '' # 자기꺼
                 await bot.sendMessage(chat_id, xv)
 
             asyncio.run(main())
