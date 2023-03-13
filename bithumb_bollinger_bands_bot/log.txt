@@ -1,0 +1,2 @@
+2023-03-13 07:23:44 :  LN_buyprice : 52150 , count : 0.0194 average : 50848.5 UP 
+2023-03-13 07:23:44 :  LN_buyprice : 51700 , count : 0.0194 average : 50872.3 UP 
